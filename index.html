@@ -129,6 +129,8 @@
 </head>
 
 <body class="dark">
+    <div id="LandScapeImage" style="display:none;"  >
+    </div>
     <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas"></canvas>
     </div>
@@ -142,8 +144,7 @@
 
 
     </div>
-    <div id="LandScapeImage" style="display:none;"  >
-    </div>
+   
     
    <script>
           
@@ -151,11 +152,12 @@
                 const ImageLandScape = document.querySelector("#LandScapeImage");
          if(window.innerHeight > window.innerWidth){
 
-         
-            ImageLandScape.style.display="block"
+            ImageLandScape.style.display="none"
+           
         }
       else{
-        ImageLandScape.style.display="none"
+       
+        ImageLandScape.style.display="block"
       }
 }, false);
    </script>
